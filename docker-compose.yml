@@ -1,0 +1,13 @@
+version: '3.7'
+services:
+    crawler:
+        container_name: crawler-container
+        hostname: crawler
+        build:
+          context: ./scrapy_crawler
+          dockerfile: Dockerfile
+        entrypoint: bash /code/entrypoint.sh
+        stdin_open: true
+        tty: true
+        volumes:
+          - ./scrapy_crawler/code:/code
