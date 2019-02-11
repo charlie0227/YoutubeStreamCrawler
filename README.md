@@ -24,6 +24,7 @@ docker run --rm -v <your-path>/youtube_live_stream:/code youtube sh -c "scrapy c
 docker-compose build
 # Up & build
 docker-compose up (--build)
+# Run
 docker-compose run --rm crawler getStreamList
 docker-compose run --rm crawler getLiveStats
 docker-compose run --rm crawler getChannelDetail
