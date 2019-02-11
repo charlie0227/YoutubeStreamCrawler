@@ -4,7 +4,7 @@ a scrapy crawler of youtube live stream
 build
 
 ```shell
-# Docker
+# Docker
 docker build -t youtube:latest .
 # Docker-compose
 docker-compose build
